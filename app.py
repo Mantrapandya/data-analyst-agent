@@ -70,6 +70,9 @@ def create_app():
     return app
 
 
+app = create_app()
+
+
 def find_available_port(preferred_port=5000, max_attempts=20):
     """Find an open port starting from preferred_port."""
     for port in range(preferred_port, preferred_port + max_attempts):
@@ -80,7 +83,6 @@ def find_available_port(preferred_port=5000, max_attempts=20):
 
 
 if __name__ == "__main__":
-    app = create_app()
     port = find_available_port(preferred_port=5000)
     host = "127.0.0.1"
 
