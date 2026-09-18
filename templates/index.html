@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analyst Agent — Your Autonomous AI Data Analyst</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <!-- Plotly.js CDN for interactive visual analytics -->
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="brand-icon">D</div>
+                <div>
+                    <div class="brand-title">Data Analyst Agent</div>
+                    <div class="brand-subtitle">Autonomous AI Analyst</div>
+                </div>
+            </div>
+
+            <ul class="nav-links">
+                <li class="nav-item">
+                    <a class="nav-link active" data-tab="dashboard">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg>
+                        <span>Overview</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-tab="data">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                        <span>Data Explorer</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-tab="eda">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                        <span>Automated EDA</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-tab="anomalies">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                        <span>Anomalies</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-tab="correlations">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+                        <span>Correlations</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-tab="ask">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                        <span>Ask Data</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-tab="reports">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
+                        <span>Executive Reports</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <div class="status-badge">
+                    <span class="status-dot"></span>
+                    <span>System Active</span>
+                </div>
+                <div style="margin-top: 8px; font-size: 11px;">Data Analyst Agent v2.0</div>
+            </div>
+        </aside>
+
+        <!-- Main Workspace -->
+        <div class="main-wrapper">
+            <!-- Top Navigation Bar -->
+            <header class="top-nav">
+                <div class="active-dataset-display">
+                    <select id="datasetSelect" class="btn btn-secondary btn-sm" style="max-width: 260px; outline: none;"></select>
+                    <div class="dataset-pill">
+                        <span id="currentDatasetLabel">No Dataset Selected</span>
+                        <span id="datasetRowColBadge" class="status-badge" style="background:rgba(255,255,255,0.08); color:var(--text-muted); border:none;">0 rows</span>
+                    </div>
+                </div>
+
+                <div class="nav-actions">
+                    <!-- Multi-Dataset Sample Quick Load Dropdown -->
+                    <div class="sample-dropdown-wrapper">
+                        <button id="sampleDropdownBtn" class="btn btn-secondary btn-sm">
+                            <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                            Sample Datasets
+                        </button>
+                        <div id="sampleDropdownMenu" class="sample-dropdown-menu">
+                            <a href="#" class="sample-item" data-type="sales">🛍️ E-Commerce Sales (800 rows)</a>
+                            <a href="#" class="sample-item" data-type="hr">👥 HR & Employees (500 rows)</a>
+                            <a href="#" class="sample-item" data-type="real_estate">🏡 Real Estate Properties (600 rows)</a>
+                        </div>
+                    </div>
+
+                    <button id="openCleanModalBtn" class="btn btn-primary btn-sm">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                        Review Cleaning
+                    </button>
+                </div>
+            </header>
+
+            <!-- Main Content Area -->
+            <main class="content-body">
+                <!-- HERO LANDING BANNER -->
+                <div class="hero-banner" id="heroBanner">
+                    <div class="hero-text">
+                        <h1 class="hero-title">Your Data. Analyzed Automatically.</h1>
+                        <p class="hero-subtitle">
+                            Upload a dataset and let <strong>Data Analyst Agent</strong> profile, clean, analyze, visualize, and explain it.
+                        </p>
+                        <div class="hero-cta-group">
+                            <button class="btn btn-primary" onclick="document.getElementById('fileInput').click()">Upload Dataset</button>
+                            <button class="btn btn-secondary" onclick="loadSampleDataset('sales')">Try Sales Sample</button>
+                            <button class="btn btn-secondary" onclick="loadSampleDataset('hr')">Try HR Sample</button>
+                            <button class="btn btn-secondary" onclick="loadSampleDataset('real_estate')">Try Real Estate Sample</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 1: OVERVIEW & DASHBOARD -->
+                <div id="tab-dashboard" class="tab-pane active">
+                    <div class="section-header">
+                        <div>
+                            <h1 class="section-title">Overview</h1>
+                            <p class="section-subtitle">Your dataset at a glance — health score, dynamic KPIs, and automated discoveries.</p>
+                        </div>
+                    </div>
+
+                    <!-- Health Score & AI Narrative Card -->
+                    <div class="health-score-card">
+                        <div>
+                            <h2 style="font-size: 18px; color: #fff; margin-bottom: 6px;">Data Health Index</h2>
+                            <p style="font-size: 13px; color: var(--text-muted); max-width: 580px;">
+                                Composite score derived from completeness, uniqueness, consistency, validity, and attribute richness.
+                            </p>
+                            <div id="aiNarrativeBox" style="margin-top: 14px; font-size: 13px; color: var(--text-main); line-height: 1.6;"></div>
+                        </div>
+                        <div id="healthScoreCircle" class="health-score-circle">
+                            <span id="healthScoreNumber">--</span>
+                            <small>SCORE</small>
+                        </div>
+                    </div>
+
+                    <!-- Dynamic KPIs Grid (Never hardcoded) -->
+                    <div id="dashboardKpis" class="kpi-grid"></div>
+
+                    <!-- Autonomous Takeaways Banner -->
+                    <div class="insights-banner">
+                        <h3>
+                            <svg style="width:18px;height:18px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+                            Key Insights & Takeaways
+                        </h3>
+                        <div id="executiveHighlightsList" class="insight-pill-list"></div>
+                    </div>
+                </div>
+
+                <!-- TAB 2: DATA EXPLORER & CLEANING -->
+                <div id="tab-data" class="tab-pane">
+                    <div class="section-header">
+                        <div>
+                            <h1 class="section-title">Data Explorer & Quality</h1>
+                            <p class="section-subtitle">Inspect raw records, audit column data types, and review safe cleaning transformations.</p>
+                        </div>
+                        <div style="display:flex; gap:10px;">
+                            <a id="exportCsvBtn" class="btn btn-secondary btn-sm" href="#" onclick="if(currentDataset) window.location.href='/api/datasets/'+currentDataset.id+'/export/csv'; return false;">Export Cleaned CSV</a>
+                            <a id="exportJsonBtn" class="btn btn-secondary btn-sm" href="#" onclick="if(currentDataset) window.location.href='/api/datasets/'+currentDataset.id+'/export/json'; return false;">Export Analysis JSON</a>
+                        </div>
+                    </div>
+
+                    <!-- Drag & Drop Upload Zone -->
+                    <div id="uploadDropzone" class="dropzone" style="margin-bottom: 28px;">
+                        <input type="file" id="fileInput" style="display: none;" accept=".csv,.xlsx,.xls">
+                        <div class="dropzone-icon">📁</div>
+                        <h3 style="color:#fff; font-size: 16px; margin-bottom: 6px;">Drop your dataset here or click to browse</h3>
+                        <p style="color:var(--text-muted); font-size: 13px;">Supports CSV, XLSX, XLS (up to 50 MB).</p>
+                    </div>
+
+                    <!-- Search Filter & Controls -->
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 14px;">
+                        <input type="text" id="columnSearchInput" class="chat-input" style="max-width:320px;" placeholder="Search columns or values...">
+                        <span id="tableStatusInfo" style="font-size: 12px; color:var(--text-muted);"></span>
+                    </div>
+
+                    <!-- Tabular Preview -->
+                    <div class="table-wrapper">
+                        <div class="table-scroll">
+                            <table class="data-table">
+                                <thead id="tableHead"></thead>
+                                <tbody id="tableBody"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 3: AUTOMATED EDA -->
+                <div id="tab-eda" class="tab-pane">
+                    <div class="section-header">
+                        <div>
+                            <h1 class="section-title">Automated Exploratory Data Analysis</h1>
+                            <p class="section-subtitle">Intelligently selected distributions, box plots, category comparisons, and trends.</p>
+                        </div>
+                    </div>
+                    <div id="edaChartsContainer" class="charts-grid"></div>
+                </div>
+
+                <!-- TAB 4: ANOMALIES -->
+                <div id="tab-anomalies" class="tab-pane">
+                    <div class="section-header">
+                        <div>
+                            <h1 class="section-title">Statistical Anomaly Detection</h1>
+                            <p class="section-subtitle">IQR and Z-score statistical outlier surveillance.</p>
+                        </div>
+                    </div>
+                    <div id="anomaliesContainer"></div>
+                </div>
+
+                <!-- TAB 5: CORRELATIONS -->
+                <div id="tab-correlations" class="tab-pane">
+                    <div class="section-header">
+                        <div>
+                            <h1 class="section-title">Correlations & Associations</h1>
+                            <p class="section-subtitle">Pairwise Pearson correlation matrix and interactive heatmap.</p>
+                        </div>
+                    </div>
+                    <div id="correlationsContainer"></div>
+                </div>
+
+                <!-- TAB 6: ASK DATA -->
+                <div id="tab-ask" class="tab-pane">
+                    <div class="section-header">
+                        <div>
+                            <h1 class="section-title">Ask Your Data</h1>
+                            <p class="section-subtitle">Ask questions in natural language — executed via sandboxed SQL and verified metrics.</p>
+                        </div>
+                    </div>
+
+                    <!-- Suggestion Chips -->
+                    <div id="chatSuggestions" style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:16px;"></div>
+
+                    <div class="chat-container">
+                        <div id="chatHistory" class="chat-history">
+                            <div class="chat-msg assistant">
+                                Hello! I am your <strong>Data Analyst Agent</strong>. Ask any analytical question about your active dataset. I will generate read-only SQL, execute it against the data engine, and return verified answers.
+                            </div>
+                        </div>
+                        <div class="chat-input-bar">
+                            <input type="text" id="chatInput" class="chat-input" placeholder="Ask a question (e.g., 'What is the average salary by department?', 'Highest price property')...">
+                            <button id="chatSendBtn" class="btn btn-primary">
+                                <span>Ask</span>
+                                <svg style="width:14px;height:14px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 7: EXECUTIVE REPORTS -->
+                <div id="tab-reports" class="tab-pane">
+                    <div class="section-header">
+                        <div>
+                            <h1 class="section-title">Executive Intelligence Reports</h1>
+                            <p class="section-subtitle">Structured business report with data quality, KPIs, discoveries, and recommendations.</p>
+                        </div>
+                    </div>
+                    <div id="reportPreviewFrame"></div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Safe Cleaning Review Modal -->
+    <div id="cleanModal" class="modal-backdrop">
+        <div class="modal-window">
+            <div class="modal-header">
+                <h3 style="color:#fff; font-size:16px;">Safe Cleaning Review Pipeline</h3>
+                <button id="closeCleanModalBtn" style="background:none; border:none; color:var(--text-muted); font-size:20px; cursor:pointer;">&times;</button>
+            </div>
+            <div id="cleanModalBody" class="modal-body">
+                Analyzing dataset for quality defects...
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary btn-sm" onclick="document.getElementById('cleanModal').classList.remove('active')">Cancel</button>
+                <button id="applyCleaningBtn" class="btn btn-success btn-sm">Apply Safe Cleaning</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notifications Container -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>

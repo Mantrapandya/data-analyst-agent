@@ -1,0 +1,501 @@
+employee_id,department,job_title,location,hire_date,tenure_years,salary,performance_score,satisfaction_score,projects_completed
+EMP-0001,Human Resources,HR Generalist,London,2023-02-04,1.3,89200.0,3.7,4.3,8
+EMP-0002,Human Resources,HR Generalist,Austin,2023-02-23,1.3,80600.0,4.5,3.7,16
+EMP-0003,Engineering,DevOps Specialist,San Francisco,2019-01-31,5.3,128500.0,4.4,3.7,17
+EMP-0004,Product,UX Designer,Toronto,2019-05-05,5.1,138800.0,3.6,3.1,16
+EMP-0005,Marketing,Growth Marketer,Toronto,2018-08-15,5.8,111700.0,4.2,4.3,10
+EMP-0006,Data Analytics,BI Developer,Remote,2019-04-15,5.1,108500.0,4.4,3.8,16
+EMP-0007,Sales,Business Development Rep,Austin,2018-07-13,5.9,122200.0,3.4,3.7,10
+EMP-0008,Human Resources,HR Generalist,Remote,2018-03-12,6.2,88500.0,2.7,3.3,23
+EMP-0009,Finance,Staff Accountant,Toronto,2023-01-10,1.4,96900.0,2.9,4.7,18
+EMP-0010,Marketing,Growth Marketer,London,2021-11-16,2.5,96600.0,2.5,3.2,3
+EMP-0011,Human Resources,Talent Recruiter,Toronto,2020-12-30,3.4,95300.0,4.6,3.2,24
+EMP-0012,Human Resources,People Operations Manager,Remote,2022-07-16,1.9,88600.0,2.9,3.4,27
+EMP-0013,Sales,Business Development Rep,London,2023-03-26,1.2,95400.0,4.7,3.3,6
+EMP-0014,Marketing,Content Strategist,New York,2020-02-08,4.3,87900.0,3.9,5.0,16
+EMP-0015,Engineering,Senior Developer,Toronto,2019-07-25,4.9,152100.0,2.7,4.9,10
+EMP-0016,Data Analytics,Analytics Engineer,New York,2020-05-20,4.0,380000.0,4.5,4.9,9
+EMP-0017,Engineering,DevOps Specialist,San Francisco,2021-08-30,2.8,115500.0,4.1,4.7,16
+EMP-0018,Finance,Payroll Manager,Austin,2018-04-02,6.2,105400.0,3.2,4.3,19
+EMP-0019,Human Resources,People Operations Manager,Austin,2019-10-08,4.6,80300.0,2.8,3.7,13
+EMP-0020,Data Analytics,BI Developer,New York,2021-07-31,2.8,118400.0,3.8,3.4,23
+EMP-0021,Engineering,Senior Developer,New York,2019-12-03,4.5,134700.0,3.6,4.3,23
+EMP-0022,Finance,Payroll Manager,Austin,2022-08-13,1.8,97000.0,4.1,3.4,16
+EMP-0023,Human Resources,People Operations Manager,Austin,2019-10-14,4.6,94900.0,4.3,3.5,15
+EMP-0024,Sales,Sales Manager,Austin,2023-06-19,1.0,101800.0,3.1,4.2,12
+EMP-0025,Finance,Staff Accountant,Toronto,2020-06-17,4.0,93200.0,3.9,3.4,3
+EMP-0026,Product,UX Designer,London,2023-06-20,1.0,123500.0,2.6,3.8,16
+EMP-0027,Finance,Staff Accountant,London,2022-04-27,2.1,108600.0,3.7,4.6,22
+EMP-0028,Engineering,Software Engineer,Austin,2021-11-18,2.5,133000.0,2.8,3.2,21
+EMP-0029,Product,UX Designer,London,2019-11-26,4.5,134100.0,2.9,4.4,15
+EMP-0030,Engineering,DevOps Specialist,San Francisco,2018-01-14,6.4,142900.0,4.1,4.1,9
+EMP-0031,Finance,Financial Analyst,San Francisco,2021-08-26,2.8,92300.0,4.8,4.6,25
+EMP-0032,Sales,Sales Manager,New York,2018-10-08,5.6,126300.0,4.7,4.9,27
+EMP-0033,Finance,Payroll Manager,San Francisco,2022-12-08,1.5,86400.0,3.8,3.0,18
+EMP-0034,Sales,Business Development Rep,Remote,2021-09-13,2.7,112400.0,2.8,5.0,16
+EMP-0035,Human Resources,People Operations Manager,London,2021-12-30,2.4,86400.0,5.0,3.8,6
+EMP-0036,Finance,Financial Analyst,Austin,2018-08-27,5.8,116100.0,2.7,3.2,11
+EMP-0037,Sales,Account Executive,Remote,2022-01-21,2.4,104900.0,3.4,4.6,24
+EMP-0038,Product,Technical Program Manager,Toronto,2023-04-01,1.2,108200.0,2.6,3.6,9
+EMP-0039,Data Analytics,Analytics Engineer,Remote,2019-02-15,5.3,111400.0,2.9,3.9,8
+EMP-0040,Marketing,Growth Marketer,San Francisco,2022-03-29,2.2,87600.0,2.6,3.6,10
+EMP-0041,Engineering,QA Architect,Austin,2018-09-21,5.7,148000.0,4.2,4.3,23
+EMP-0042,Human Resources,Talent Recruiter,Remote,2022-05-07,2.1,85700.0,4.9,4.7,3
+EMP-0043,Data Analytics,Data Scientist,San Francisco,2018-07-07,5.9,129000.0,3.4,4.7,3
+EMP-0044,Product,UX Designer,Austin,2018-03-31,6.2,119800.0,2.5,3.3,14
+EMP-0045,Product,Product Manager,Toronto,2023-02-21,1.3,104600.0,4.2,4.6,25
+EMP-0046,Data Analytics,Data Scientist,Toronto,2020-01-26,4.3,109500.0,4.0,4.7,6
+EMP-0047,Product,Product Manager,Toronto,2020-11-23,3.5,122300.0,4.8,3.8,18
+EMP-0048,Engineering,Software Engineer,New York,2020-12-22,3.4,140900.0,2.5,4.4,11
+EMP-0049,Data Analytics,Data Scientist,Austin,2021-06-30,2.9,102200.0,4.9,3.5,6
+EMP-0050,Product,UX Designer,New York,2022-03-02,2.3,114300.0,4.1,4.0,19
+EMP-0051,Engineering,QA Architect,Austin,2019-07-12,4.9,152300.0,2.9,3.2,27
+EMP-0052,Sales,Business Development Rep,London,2021-01-08,3.4,111600.0,3.5,3.8,7
+EMP-0053,Finance,Financial Analyst,Toronto,2020-02-07,4.3,114300.0,2.8,3.3,28
+EMP-0054,Finance,Financial Analyst,San Francisco,2020-12-19,3.4,104000.0,3.2,4.1,23
+EMP-0055,Sales,Business Development Rep,Toronto,2021-02-27,3.3,109300.0,3.0,3.1,8
+EMP-0056,Product,UX Designer,London,2018-09-02,5.7,120800.0,3.7,3.6,6
+EMP-0057,Sales,Account Executive,Remote,2020-10-19,3.6,105000.0,2.6,3.7,4
+EMP-0058,Human Resources,Talent Recruiter,Toronto,2019-01-02,5.4,82200.0,5.0,3.1,10
+EMP-0059,Sales,Business Development Rep,Toronto,2018-11-23,5.5,122500.0,3.5,4.3,8
+EMP-0060,Marketing,Growth Marketer,London,2022-05-02,2.1,87400.0,4.8,4.7,14
+EMP-0061,Marketing,Growth Marketer,Austin,2021-03-20,3.2,90100.0,3.2,4.9,27
+EMP-0062,Sales,Business Development Rep,San Francisco,2023-02-20,1.3,102100.0,2.5,3.2,15
+EMP-0063,Product,Product Manager,San Francisco,2019-05-29,5.0,127400.0,4.8,3.4,5
+EMP-0064,Engineering,QA Architect,Toronto,2023-01-19,1.4,133700.0,3.5,4.6,11
+EMP-0065,Sales,Business Development Rep,London,2018-09-20,5.7,115900.0,3.5,4.8,21
+EMP-0066,Marketing,SEO Specialist,Toronto,2018-06-17,6.0,96000.0,4.5,4.1,23
+EMP-0067,Product,UX Designer,New York,2022-05-22,2.0,107000.0,2.6,3.7,24
+EMP-0068,Human Resources,HR Generalist,Toronto,2022-06-18,2.0,90300.0,4.2,4.0,6
+EMP-0069,Sales,Sales Manager,New York,2018-12-20,5.4,112100.0,4.4,4.3,9
+EMP-0070,Marketing,Content Strategist,New York,2019-10-19,4.6,97600.0,3.6,4.4,3
+EMP-0071,Finance,Payroll Manager,Remote,2019-12-14,4.5,94500.0,2.7,3.7,12
+EMP-0072,Engineering,Software Engineer,Remote,2018-06-17,6.0,141800.0,3.1,4.6,7
+EMP-0073,Product,Technical Program Manager,San Francisco,2019-02-19,5.3,131000.0,3.2,4.6,20
+EMP-0074,Engineering,Senior Developer,Toronto,2020-01-01,4.4,142600.0,4.8,4.2,23
+EMP-0075,Marketing,SEO Specialist,Austin,2019-08-02,4.8,101900.0,4.4,3.8,18
+EMP-0076,Human Resources,HR Generalist,New York,2020-06-08,4.0,78800.0,3.4,4.7,9
+EMP-0077,Product,UX Designer,San Francisco,2022-05-21,2.0,104200.0,4.2,3.6,11
+EMP-0078,Human Resources,Talent Recruiter,Austin,2018-11-08,5.6,83000.0,3.1,4.4,18
+EMP-0079,Engineering,DevOps Specialist,London,2021-07-19,2.9,128300.0,3.7,4.5,14
+EMP-0080,Product,UX Designer,Toronto,2020-03-04,4.2,139500.0,4.3,3.1,5
+EMP-0081,Marketing,Content Strategist,Remote,2021-01-25,3.3,101500.0,2.7,3.4,2
+EMP-0082,Sales,Sales Manager,New York,2018-11-23,5.5,101200.0,4.5,4.8,20
+EMP-0083,Marketing,Growth Marketer,Remote,2022-03-15,2.2,98500.0,4.9,3.9,7
+EMP-0084,Product,UX Designer,Toronto,2019-11-19,4.5,141200.0,2.9,4.5,23
+EMP-0085,Finance,Payroll Manager,Toronto,2022-03-02,2.3,107000.0,2.6,4.9,24
+EMP-0086,Sales,Sales Manager,London,2023-06-02,1.0,101400.0,2.6,3.1,7
+EMP-0087,Data Analytics,Data Analyst,London,2022-12-15,1.5,98800.0,3.0,3.2,14
+EMP-0088,Sales,Sales Manager,Remote,2018-12-27,5.4,121600.0,3.8,3.7,18
+EMP-0089,Product,Product Manager,New York,2022-04-17,2.1,117100.0,3.5,4.1,16
+EMP-0090,Finance,Payroll Manager,San Francisco,2021-09-13,2.7,104200.0,3.1,4.1,16
+EMP-0091,Finance,Financial Analyst,New York,2019-01-08,5.4,114200.0,3.0,3.4,9
+EMP-0092,Engineering,Software Engineer,Austin,2018-09-23,5.7,134300.0,3.1,3.2,3
+EMP-0093,Finance,Financial Analyst,Toronto,2021-06-06,3.0,94800.0,4.6,3.9,28
+EMP-0094,Product,Technical Program Manager,Austin,2022-10-10,1.6,122000.0,3.1,3.6,3
+EMP-0095,Human Resources,Talent Recruiter,San Francisco,2022-10-27,1.6,90500.0,4.0,4.6,3
+EMP-0096,Engineering,Software Engineer,San Francisco,2018-05-30,6.0,162900.0,4.3,4.2,14
+EMP-0097,Product,UX Designer,New York,2021-07-23,2.9,123800.0,4.4,4.8,6
+EMP-0098,Finance,Payroll Manager,Remote,2018-08-14,5.8,109400.0,3.2,4.6,26
+EMP-0099,Data Analytics,Data Scientist,San Francisco,2022-04-07,2.2,115100.0,4.5,4.2,25
+EMP-0100,Sales,Sales Manager,San Francisco,2021-03-09,3.2,96000.0,3.6,4.9,10
+EMP-0101,Finance,Financial Analyst,Toronto,2021-01-25,3.3,110000.0,3.0,4.6,7
+EMP-0102,Data Analytics,BI Developer,London,2019-11-02,4.6,130300.0,3.2,4.6,10
+EMP-0103,Marketing,Content Strategist,Remote,2019-06-03,5.0,94600.0,3.4,4.2,12
+EMP-0104,Engineering,Senior Developer,San Francisco,2019-10-17,4.6,126100.0,4.4,4.1,26
+EMP-0105,Human Resources,People Operations Manager,San Francisco,2020-10-06,3.7,99000.0,4.9,4.6,10
+EMP-0106,Sales,Business Development Rep,New York,2018-03-15,6.2,127700.0,4.3,4.9,15
+EMP-0107,Human Resources,People Operations Manager,Austin,2018-08-11,5.8,105800.0,4.6,3.9,25
+EMP-0108,Marketing,Growth Marketer,London,2021-09-22,2.7,90700.0,3.9,5.0,11
+EMP-0109,Human Resources,HR Generalist,New York,2021-01-30,3.3,93600.0,4.3,4.1,25
+EMP-0110,Engineering,Senior Developer,Remote,2022-12-18,1.5,112100.0,5.0,3.7,26
+EMP-0111,Marketing,SEO Specialist,Remote,2023-06-21,0.9,77900.0,3.7,3.9,22
+EMP-0112,Data Analytics,Analytics Engineer,Austin,2019-02-05,5.3,123100.0,5.0,4.3,22
+EMP-0113,Finance,Payroll Manager,Austin,2021-07-22,2.9,105300.0,5.0,3.8,17
+EMP-0114,Finance,Financial Analyst,Austin,2019-05-17,5.0,117900.0,3.8,4.6,5
+EMP-0115,Engineering,DevOps Specialist,Remote,2020-06-04,4.0,130700.0,4.7,4.4,21
+EMP-0116,Human Resources,Talent Recruiter,San Francisco,2022-01-10,2.4,90000.0,2.8,4.8,20
+EMP-0117,Product,Product Manager,San Francisco,2019-09-21,4.7,131400.0,4.9,4.1,22
+EMP-0118,Product,Technical Program Manager,Remote,2021-01-22,3.4,129600.0,3.7,3.5,18
+EMP-0119,Product,Product Manager,New York,2021-01-18,3.4,121500.0,3.1,3.6,25
+EMP-0120,Product,Product Manager,Remote,2022-03-17,2.2,110100.0,4.6,3.6,13
+EMP-0121,Finance,Payroll Manager,Remote,2023-05-29,1.0,101200.0,3.8,4.1,14
+EMP-0122,Finance,Financial Analyst,Austin,2020-05-16,4.0,101200.0,4.0,4.3,17
+EMP-0123,Marketing,Content Strategist,London,2020-11-07,3.6,101200.0,3.8,3.2,24
+EMP-0124,Engineering,Software Engineer,New York,2018-05-28,6.0,136300.0,3.1,4.6,3
+EMP-0125,Engineering,Senior Developer,San Francisco,2018-04-29,6.1,151300.0,4.9,3.5,20
+EMP-0126,Marketing,Content Strategist,Austin,2018-05-30,6.0,92400.0,3.9,4.6,17
+EMP-0127,Sales,Business Development Rep,Remote,2018-05-19,6.0,113800.0,4.2,4.7,21
+EMP-0128,Human Resources,HR Generalist,San Francisco,2022-03-15,2.2,93700.0,2.9,4.4,19
+EMP-0129,Marketing,SEO Specialist,San Francisco,2021-01-25,3.3,103000.0,4.5,3.8,9
+EMP-0130,Sales,Account Executive,San Francisco,2020-04-20,4.1,110400.0,4.9,4.3,17
+EMP-0131,Data Analytics,Data Scientist,Austin,2019-10-15,4.6,120400.0,2.9,4.5,10
+EMP-0132,Marketing,Content Strategist,Remote,2021-07-13,2.9,94200.0,3.8,3.4,26
+EMP-0133,Human Resources,Talent Recruiter,Remote,2019-01-31,5.3,83000.0,4.1,3.9,2
+EMP-0134,Marketing,SEO Specialist,Austin,2020-07-01,3.9,94900.0,3.1,3.6,11
+EMP-0135,Sales,Account Executive,Austin,2021-06-03,3.0,95800.0,4.9,4.8,27
+EMP-0136,Data Analytics,Analytics Engineer,London,2020-11-20,3.5,122800.0,4.8,4.0,17
+EMP-0137,Finance,Financial Analyst,London,2021-09-09,2.7,91700.0,2.8,3.7,3
+EMP-0138,Human Resources,Talent Recruiter,Austin,2019-11-02,4.6,98900.0,2.7,3.7,20
+EMP-0139,Sales,Account Executive,Toronto,2020-11-14,3.5,97100.0,3.6,4.4,22
+EMP-0140,Engineering,QA Architect,New York,2023-05-19,1.0,133200.0,4.9,4.5,27
+EMP-0141,Human Resources,People Operations Manager,London,2023-06-04,1.0,82200.0,3.6,4.7,16
+EMP-0142,Finance,Staff Accountant,Toronto,2022-03-08,2.2,88500.0,3.9,3.9,25
+EMP-0143,Marketing,Growth Marketer,London,2019-01-18,5.4,97800.0,3.6,3.6,21
+EMP-0144,Product,Technical Program Manager,London,2022-08-11,1.8,104300.0,4.3,3.1,4
+EMP-0145,Finance,Payroll Manager,San Francisco,2022-05-03,2.1,106300.0,4.6,4.5,25
+EMP-0146,Engineering,Senior Developer,Toronto,2018-06-12,6.0,157900.0,3.4,3.5,21
+EMP-0147,Product,Product Manager,Austin,2018-08-05,5.8,134200.0,4.3,4.5,7
+EMP-0148,Engineering,Senior Developer,New York,2022-04-19,2.1,136800.0,3.8,3.0,24
+EMP-0149,Sales,Sales Manager,New York,2021-08-20,2.8,114400.0,4.1,4.6,9
+EMP-0150,Marketing,Content Strategist,Toronto,2019-12-27,4.4,89400.0,4.1,4.4,21
+EMP-0151,Data Analytics,BI Developer,Austin,2018-01-25,6.3,118400.0,3.1,3.4,19
+EMP-0152,Finance,Staff Accountant,London,2018-01-30,6.3,109800.0,3.9,4.4,10
+EMP-0153,Sales,Business Development Rep,Toronto,2020-03-07,4.2,120100.0,2.7,3.7,13
+EMP-0154,Data Analytics,Data Scientist,London,2023-02-20,1.3,103000.0,4.3,3.6,22
+EMP-0155,Human Resources,Talent Recruiter,Remote,2018-05-07,6.1,102000.0,2.7,4.6,6
+EMP-0156,Sales,Account Executive,Austin,2019-10-07,4.7,103300.0,4.0,3.7,28
+EMP-0157,Sales,Sales Manager,New York,2021-01-23,3.4,100100.0,3.8,4.2,13
+EMP-0158,Finance,Payroll Manager,London,2023-02-17,1.3,93100.0,4.5,3.7,2
+EMP-0159,Marketing,SEO Specialist,Remote,2019-09-27,4.7,104200.0,4.1,4.8,6
+EMP-0160,Engineering,DevOps Specialist,London,2020-03-11,4.2,134100.0,3.9,3.6,16
+EMP-0161,Engineering,QA Architect,New York,2018-08-16,5.8,161000.0,2.7,3.1,13
+EMP-0162,Sales,Sales Manager,New York,2022-04-28,2.1,92300.0,3.8,4.7,23
+EMP-0163,Finance,Staff Accountant,San Francisco,2021-04-16,3.1,100000.0,3.0,3.2,3
+EMP-0164,Marketing,Content Strategist,New York,2019-05-08,5.1,110400.0,4.6,4.7,11
+EMP-0165,Human Resources,People Operations Manager,Remote,2019-05-30,5.0,101200.0,4.3,3.1,3
+EMP-0166,Sales,Sales Manager,London,2023-01-28,1.3,93200.0,2.6,3.9,7
+EMP-0167,Product,UX Designer,Toronto,2019-11-24,4.5,131400.0,4.8,3.6,21
+EMP-0168,Finance,Staff Accountant,London,2020-11-12,3.6,93600.0,4.2,3.3,2
+EMP-0169,Product,Product Manager,Remote,2019-03-25,5.2,139900.0,3.2,4.4,18
+EMP-0170,Finance,Staff Accountant,Austin,2020-11-29,3.5,108600.0,3.4,3.5,27
+EMP-0171,Product,Technical Program Manager,San Francisco,2023-06-15,1.0,114000.0,4.2,4.4,14
+EMP-0172,Data Analytics,Data Analyst,San Francisco,2020-10-03,3.7,126100.0,3.3,3.9,5
+EMP-0173,Marketing,Growth Marketer,Remote,2018-06-07,6.0,95800.0,3.9,3.5,26
+EMP-0174,Finance,Payroll Manager,Toronto,2020-04-07,4.2,93800.0,4.6,4.5,6
+EMP-0175,Engineering,Senior Developer,San Francisco,2020-08-24,3.8,121600.0,4.1,4.2,25
+EMP-0176,Product,Technical Program Manager,Austin,2018-05-15,6.0,118500.0,3.6,4.0,24
+EMP-0177,Finance,Staff Accountant,Remote,2018-06-23,5.9,112400.0,3.7,4.4,13
+EMP-0178,Finance,Financial Analyst,San Francisco,2022-12-29,1.4,100400.0,3.5,3.1,16
+EMP-0179,Finance,Financial Analyst,London,2019-02-04,5.3,112100.0,3.0,4.2,10
+EMP-0180,Finance,Financial Analyst,San Francisco,2022-08-29,1.8,106500.0,3.5,3.0,26
+EMP-0181,Human Resources,HR Generalist,New York,2019-12-27,4.4,88400.0,3.3,4.1,7
+EMP-0182,Product,Technical Program Manager,London,2023-06-15,1.0,118000.0,3.5,4.2,11
+EMP-0183,Marketing,Content Strategist,Austin,2021-09-29,2.7,94100.0,4.7,3.2,13
+EMP-0184,Engineering,QA Architect,London,2022-10-26,1.6,133700.0,4.7,3.3,10
+EMP-0185,Data Analytics,Data Analyst,New York,2019-11-10,4.6,127100.0,4.4,3.9,23
+EMP-0186,Data Analytics,Analytics Engineer,Austin,2023-02-15,1.3,118500.0,2.8,3.8,26
+EMP-0187,Engineering,DevOps Specialist,New York,2018-08-06,5.8,146900.0,4.1,4.1,15
+EMP-0188,Engineering,QA Architect,London,2018-02-22,6.3,153200.0,3.7,3.5,17
+EMP-0189,Product,Product Manager,Austin,2020-10-11,3.6,125600.0,4.9,4.1,25
+EMP-0190,Sales,Account Executive,Remote,2021-12-31,2.4,91100.0,4.5,4.4,3
+EMP-0191,Human Resources,Talent Recruiter,Austin,2019-03-18,5.2,83700.0,4.4,4.9,13
+EMP-0192,Marketing,SEO Specialist,New York,2020-10-25,3.6,102800.0,4.9,4.4,14
+EMP-0193,Human Resources,Talent Recruiter,Remote,2021-11-30,2.5,79800.0,3.4,3.4,27
+EMP-0194,Product,Product Manager,Toronto,2018-07-25,5.9,147500.0,3.3,3.7,11
+EMP-0195,Sales,Sales Manager,Remote,2020-07-13,3.9,115800.0,3.5,4.5,3
+EMP-0196,Data Analytics,Analytics Engineer,Toronto,2022-11-26,1.5,104000.0,4.7,5.0,12
+EMP-0197,Engineering,QA Architect,Austin,2021-06-16,3.0,148000.0,4.8,3.8,8
+EMP-0198,Sales,Account Executive,Remote,2018-01-03,6.4,110700.0,2.8,4.5,15
+EMP-0199,Product,Product Manager,New York,2021-11-02,2.6,111400.0,4.2,4.2,24
+EMP-0200,Finance,Staff Accountant,Austin,2019-07-12,4.9,99400.0,3.6,3.7,9
+EMP-0201,Marketing,Growth Marketer,San Francisco,2019-09-12,4.7,100300.0,3.4,4.3,7
+EMP-0202,Finance,Staff Accountant,Austin,2021-03-26,3.2,95900.0,4.0,3.7,23
+EMP-0203,Finance,Financial Analyst,New York,2020-04-08,4.1,113800.0,4.8,3.5,20
+EMP-0204,Product,Product Manager,London,2023-02-23,1.3,117200.0,2.6,4.0,20
+EMP-0205,Human Resources,People Operations Manager,San Francisco,2019-08-28,4.8,82600.0,3.6,3.4,23
+EMP-0206,Engineering,Senior Developer,Remote,2021-03-11,3.2,122900.0,4.2,4.7,13
+EMP-0207,Engineering,QA Architect,Austin,2018-04-07,6.2,156300.0,4.6,4.7,27
+EMP-0208,Product,Technical Program Manager,London,2020-12-01,3.5,120700.0,2.6,3.4,17
+EMP-0209,Sales,Business Development Rep,Toronto,2022-09-04,1.7,95300.0,3.6,4.5,11
+EMP-0210,Engineering,QA Architect,San Francisco,2019-12-17,4.5,135700.0,4.7,4.1,5
+EMP-0211,Data Analytics,Analytics Engineer,Austin,2023-05-08,1.1,99600.0,2.7,4.4,20
+EMP-0212,Engineering,QA Architect,Toronto,2021-04-10,3.1,133000.0,2.7,4.4,20
+EMP-0213,Sales,Sales Manager,Toronto,2020-02-26,4.3,96400.0,3.5,3.8,9
+EMP-0214,Data Analytics,Analytics Engineer,Remote,2019-07-10,4.9,118600.0,2.8,4.4,15
+EMP-0215,Human Resources,People Operations Manager,Remote,2020-06-18,4.0,78800.0,4.1,3.5,28
+EMP-0216,Product,Technical Program Manager,Remote,2020-05-31,4.0,125400.0,2.8,4.9,7
+EMP-0217,Finance,Financial Analyst,London,2018-05-15,6.0,118200.0,2.8,4.3,15
+EMP-0218,Finance,Payroll Manager,San Francisco,2020-04-08,4.1,109000.0,4.3,4.1,10
+EMP-0219,Sales,Sales Manager,Toronto,2020-02-04,4.3,110500.0,3.5,3.8,23
+EMP-0220,Marketing,Growth Marketer,Austin,2020-03-03,4.2,90500.0,2.9,3.8,11
+EMP-0221,Engineering,Software Engineer,London,2019-04-17,5.1,152500.0,3.7,4.8,9
+EMP-0222,Finance,Staff Accountant,New York,2021-01-12,3.4,114500.0,3.4,4.3,24
+EMP-0223,Sales,Business Development Rep,Austin,2019-12-18,4.5,97400.0,3.8,3.2,2
+EMP-0224,Sales,Business Development Rep,London,2018-03-13,6.2,126900.0,3.4,4.0,11
+EMP-0225,Data Analytics,Data Scientist,San Francisco,2021-09-03,2.7,121100.0,3.1,4.5,16
+EMP-0226,Engineering,Senior Developer,Austin,2021-08-13,2.8,118400.0,4.9,3.3,27
+EMP-0227,Data Analytics,BI Developer,San Francisco,2018-11-20,5.5,134000.0,3.4,3.8,10
+EMP-0228,Sales,Account Executive,San Francisco,2019-07-14,4.9,97800.0,2.7,4.7,27
+EMP-0229,Sales,Sales Manager,Remote,2021-03-18,3.2,98500.0,3.6,3.8,13
+EMP-0230,Engineering,QA Architect,Toronto,2020-09-15,3.7,150600.0,3.2,3.4,24
+EMP-0231,Human Resources,People Operations Manager,New York,2018-11-11,5.6,87200.0,2.5,4.6,19
+EMP-0232,Engineering,QA Architect,New York,2020-06-22,3.9,124100.0,4.8,3.5,6
+EMP-0233,Product,Technical Program Manager,San Francisco,2021-09-04,2.7,133400.0,3.7,3.8,13
+EMP-0234,Product,Product Manager,Toronto,2021-11-23,2.5,115900.0,3.8,4.2,28
+EMP-0235,Data Analytics,BI Developer,Austin,2020-02-23,4.3,127700.0,3.6,3.2,8
+EMP-0236,Sales,Business Development Rep,London,2019-04-19,5.1,110800.0,3.5,3.2,27
+EMP-0237,Engineering,Software Engineer,New York,2022-10-13,1.6,123700.0,3.7,3.7,20
+EMP-0238,Product,Product Manager,New York,2022-10-26,1.6,104300.0,2.8,3.9,26
+EMP-0239,Human Resources,Talent Recruiter,Toronto,2022-02-10,2.3,81900.0,2.5,4.8,16
+EMP-0240,Marketing,Growth Marketer,San Francisco,2018-10-01,5.7,101100.0,3.9,3.8,22
+EMP-0241,Finance,Staff Accountant,Remote,2019-09-04,4.7,95100.0,3.6,3.8,15
+EMP-0242,Marketing,SEO Specialist,Toronto,2021-06-09,3.0,101100.0,3.6,3.8,8
+EMP-0243,Marketing,SEO Specialist,New York,2018-10-16,5.6,97100.0,2.7,4.9,7
+EMP-0244,Engineering,Senior Developer,Austin,2019-12-11,4.5,152300.0,3.4,3.4,24
+EMP-0245,Finance,Staff Accountant,Toronto,2018-02-03,6.3,102000.0,4.1,4.5,26
+EMP-0246,Engineering,QA Architect,Remote,2021-05-30,3.0,123500.0,4.5,3.2,2
+EMP-0247,Finance,Payroll Manager,Toronto,2018-06-09,6.0,119300.0,3.2,3.3,21
+EMP-0248,Engineering,Senior Developer,Austin,2019-04-10,5.1,154000.0,4.1,3.0,9
+EMP-0249,Engineering,Senior Developer,New York,2021-09-27,2.7,133200.0,2.8,3.4,14
+EMP-0250,Data Analytics,Analytics Engineer,San Francisco,2020-08-29,3.8,124800.0,3.6,3.3,22
+EMP-0251,Data Analytics,Data Analyst,San Francisco,2020-07-16,3.9,111700.0,4.5,4.9,7
+EMP-0252,Product,Product Manager,Remote,2018-06-18,6.0,128100.0,4.7,4.7,10
+EMP-0253,Product,UX Designer,San Francisco,2018-01-22,6.4,125700.0,3.9,3.4,4
+EMP-0254,Human Resources,People Operations Manager,Remote,2019-02-26,5.3,102800.0,4.3,4.4,14
+EMP-0255,Human Resources,People Operations Manager,San Francisco,2019-05-24,5.0,98200.0,2.6,3.1,22
+EMP-0256,Product,Product Manager,Toronto,2021-08-24,2.8,114600.0,4.4,4.5,12
+EMP-0257,Data Analytics,Data Analyst,Austin,2022-03-05,2.2,116900.0,4.5,3.1,14
+EMP-0258,Data Analytics,Analytics Engineer,New York,2020-06-10,4.0,119200.0,4.7,3.8,15
+EMP-0259,Marketing,Content Strategist,Toronto,2020-04-28,4.1,93500.0,2.6,4.4,15
+EMP-0260,Marketing,Content Strategist,New York,2018-01-15,6.4,100000.0,3.0,3.4,6
+EMP-0261,Data Analytics,Analytics Engineer,Austin,2021-05-19,3.0,100200.0,4.5,4.7,27
+EMP-0262,Data Analytics,Analytics Engineer,San Francisco,2021-09-27,2.7,124300.0,4.5,4.9,11
+EMP-0263,Finance,Staff Accountant,Austin,2020-06-20,3.9,92100.0,3.9,3.2,7
+EMP-0264,Finance,Staff Accountant,Remote,2020-12-05,3.5,113500.0,3.2,4.2,26
+EMP-0265,Human Resources,HR Generalist,San Francisco,2019-08-06,4.8,89100.0,4.7,3.8,15
+EMP-0266,Human Resources,HR Generalist,San Francisco,2023-02-13,1.3,85200.0,4.6,4.7,19
+EMP-0267,Product,UX Designer,New York,2023-04-21,1.1,123700.0,4.6,4.2,11
+EMP-0268,Marketing,SEO Specialist,San Francisco,2022-08-24,1.8,87700.0,3.2,4.9,26
+EMP-0269,Data Analytics,Data Scientist,Austin,2020-03-28,4.2,109500.0,3.6,4.4,3
+EMP-0270,Data Analytics,BI Developer,London,2022-09-29,1.7,119700.0,2.5,4.7,9
+EMP-0271,Marketing,Content Strategist,San Francisco,2018-02-15,6.3,98900.0,2.7,3.4,27
+EMP-0272,Engineering,Senior Developer,San Francisco,2023-02-16,1.3,128100.0,4.2,3.8,27
+EMP-0273,Human Resources,Talent Recruiter,London,2022-11-11,1.6,77800.0,3.6,3.8,14
+EMP-0274,Engineering,Senior Developer,Remote,2021-12-15,2.5,115000.0,4.3,3.5,25
+EMP-0275,Finance,Financial Analyst,San Francisco,2018-04-27,6.1,105000.0,4.5,4.9,23
+EMP-0276,Product,UX Designer,Toronto,2020-07-03,3.9,125000.0,3.9,4.4,9
+EMP-0277,Product,UX Designer,Toronto,2018-03-08,6.2,129700.0,3.8,4.7,20
+EMP-0278,Sales,Business Development Rep,Austin,2020-08-31,3.8,99100.0,3.9,5.0,26
+EMP-0279,Finance,Staff Accountant,London,2020-05-31,4.0,100000.0,2.7,3.2,28
+EMP-0280,Engineering,QA Architect,Toronto,2018-09-12,5.7,141800.0,4.9,4.3,28
+EMP-0281,Data Analytics,Analytics Engineer,Toronto,2019-11-07,4.6,116100.0,4.3,3.5,13
+EMP-0282,Engineering,Senior Developer,Toronto,2018-05-02,6.1,132600.0,4.6,4.0,19
+EMP-0283,Data Analytics,Data Analyst,Austin,2021-07-21,2.9,104200.0,2.5,4.0,19
+EMP-0284,Finance,Staff Accountant,Remote,2018-03-10,6.2,110100.0,3.4,3.7,19
+EMP-0285,Data Analytics,BI Developer,Remote,2018-10-30,5.6,111400.0,4.8,4.2,28
+EMP-0286,Data Analytics,BI Developer,Austin,2018-11-21,5.5,112500.0,3.1,4.9,6
+EMP-0287,Sales,Account Executive,Toronto,2018-03-29,6.2,125000.0,4.3,3.5,9
+EMP-0288,Product,Technical Program Manager,New York,2019-07-06,4.9,117100.0,3.6,3.1,9
+EMP-0289,Engineering,DevOps Specialist,San Francisco,2022-09-13,1.7,131300.0,3.0,3.9,26
+EMP-0290,Engineering,QA Architect,New York,2021-07-29,2.8,115500.0,3.4,4.6,13
+EMP-0291,Engineering,DevOps Specialist,Toronto,2019-07-05,4.9,134500.0,3.2,4.2,16
+EMP-0292,Human Resources,People Operations Manager,San Francisco,2019-08-01,4.8,97800.0,4.2,3.4,27
+EMP-0293,Human Resources,HR Generalist,London,2019-03-11,5.2,92600.0,5.0,4.9,13
+EMP-0294,Product,UX Designer,Remote,2022-06-13,2.0,120800.0,4.0,3.5,9
+EMP-0295,Sales,Business Development Rep,New York,2018-08-18,5.8,117600.0,3.9,4.3,20
+EMP-0296,Engineering,Software Engineer,Toronto,2018-04-18,6.1,129700.0,4.0,3.3,19
+EMP-0297,Engineering,DevOps Specialist,Remote,2021-03-08,3.2,143500.0,3.1,3.8,10
+EMP-0298,Finance,Payroll Manager,Austin,2022-01-12,2.4,102100.0,4.3,4.9,18
+EMP-0299,Human Resources,People Operations Manager,Toronto,2020-07-12,3.9,86900.0,2.6,4.0,9
+EMP-0300,Marketing,Growth Marketer,Austin,2018-02-09,6.3,92700.0,3.8,4.2,19
+EMP-0301,Finance,Payroll Manager,Austin,2018-07-28,5.8,107900.0,3.4,4.8,19
+EMP-0302,Human Resources,HR Generalist,Toronto,2023-03-19,1.2,74700.0,3.7,4.0,20
+EMP-0303,Sales,Account Executive,Austin,2018-09-05,5.7,120700.0,2.6,4.7,4
+EMP-0304,Engineering,Senior Developer,Toronto,2022-01-19,2.4,122200.0,5.0,4.0,22
+EMP-0305,Product,Technical Program Manager,New York,2018-02-02,6.3,124400.0,4.7,3.1,24
+EMP-0306,Product,Product Manager,San Francisco,2018-06-03,6.0,135100.0,4.5,3.4,20
+EMP-0307,Human Resources,People Operations Manager,Toronto,2019-08-29,4.8,97200.0,4.7,3.3,21
+EMP-0308,Marketing,Growth Marketer,Remote,2020-12-02,3.5,92100.0,5.0,4.0,11
+EMP-0309,Engineering,DevOps Specialist,San Francisco,2020-06-10,4.0,143000.0,4.9,3.7,9
+EMP-0310,Marketing,Content Strategist,San Francisco,2022-08-20,1.8,84400.0,2.6,4.6,6
+EMP-0311,Finance,Payroll Manager,San Francisco,2020-11-26,3.5,94700.0,4.0,3.2,12
+EMP-0312,Finance,Payroll Manager,Toronto,2023-01-18,1.4,84100.0,4.5,3.6,3
+EMP-0313,Product,Technical Program Manager,London,2018-08-06,5.8,119800.0,4.7,4.8,5
+EMP-0314,Human Resources,Talent Recruiter,London,2018-02-09,6.3,85500.0,3.9,3.8,21
+EMP-0315,Engineering,Software Engineer,San Francisco,2019-06-13,5.0,134900.0,4.5,3.8,5
+EMP-0316,Marketing,Growth Marketer,Remote,2021-10-01,2.7,93800.0,3.3,4.5,11
+EMP-0317,Engineering,DevOps Specialist,San Francisco,2022-12-31,1.4,135400.0,3.8,4.7,3
+EMP-0318,Sales,Sales Manager,Remote,2021-11-17,2.5,108600.0,3.1,3.2,10
+EMP-0319,Data Analytics,Data Analyst,San Francisco,2019-07-28,4.8,120800.0,3.0,3.8,17
+EMP-0320,Engineering,Software Engineer,San Francisco,2022-11-24,1.5,128900.0,3.6,3.7,27
+EMP-0321,Sales,Account Executive,New York,2019-08-20,4.8,122700.0,2.8,3.1,10
+EMP-0322,Finance,Payroll Manager,Remote,2021-10-30,2.6,105900.0,3.6,3.5,20
+EMP-0323,Product,Product Manager,Austin,2021-08-01,2.8,132200.0,4.5,4.8,2
+EMP-0324,Product,Technical Program Manager,San Francisco,2023-03-01,1.3,106200.0,2.7,3.8,7
+EMP-0325,Engineering,Software Engineer,Remote,2020-02-03,4.3,151800.0,2.8,3.6,20
+EMP-0326,Engineering,DevOps Specialist,London,2022-11-22,1.5,121900.0,2.9,4.6,8
+EMP-0327,Marketing,Content Strategist,New York,2023-02-08,1.3,90200.0,2.9,3.1,20
+EMP-0328,Engineering,DevOps Specialist,Austin,2020-02-06,4.3,125800.0,3.8,4.9,16
+EMP-0329,Marketing,Growth Marketer,Austin,2019-08-09,4.8,106000.0,3.7,3.9,2
+EMP-0330,Sales,Account Executive,San Francisco,2019-11-11,4.6,113600.0,3.8,4.9,14
+EMP-0331,Finance,Payroll Manager,London,2020-11-28,3.5,104500.0,4.5,3.7,25
+EMP-0332,Product,UX Designer,Remote,2020-12-17,3.5,123200.0,3.0,4.7,6
+EMP-0333,Finance,Financial Analyst,New York,2019-06-09,5.0,102300.0,2.7,4.1,14
+EMP-0334,Data Analytics,Data Analyst,London,2022-07-18,1.9,95700.0,3.3,4.5,9
+EMP-0335,Finance,Staff Accountant,Remote,2021-02-09,3.3,91200.0,4.4,3.3,20
+EMP-0336,Engineering,Software Engineer,Austin,2020-01-12,4.4,147600.0,4.5,4.1,6
+EMP-0337,Product,Technical Program Manager,Toronto,2021-12-11,2.5,111100.0,3.3,3.7,16
+EMP-0338,Marketing,Growth Marketer,New York,2019-07-18,4.9,93000.0,3.2,4.6,2
+EMP-0339,Marketing,SEO Specialist,Austin,2020-09-08,3.7,96300.0,3.9,3.8,23
+EMP-0340,Human Resources,Talent Recruiter,San Francisco,2019-02-09,5.3,88900.0,4.7,4.5,21
+EMP-0341,Sales,Account Executive,New York,2021-04-13,3.1,106500.0,2.9,3.5,27
+EMP-0342,Sales,Business Development Rep,Toronto,2018-03-25,6.2,124700.0,4.6,4.5,23
+EMP-0343,Product,Technical Program Manager,London,2018-09-28,5.7,147800.0,3.2,4.6,15
+EMP-0344,Marketing,Growth Marketer,Remote,2021-08-27,2.8,94300.0,3.2,4.5,16
+EMP-0345,Sales,Business Development Rep,London,2018-11-06,5.6,119000.0,3.5,3.7,19
+EMP-0346,Finance,Financial Analyst,San Francisco,2022-12-09,1.5,90300.0,4.0,4.0,8
+EMP-0347,Engineering,DevOps Specialist,Toronto,2023-02-16,1.3,124100.0,3.3,4.5,24
+EMP-0348,Data Analytics,Data Analyst,London,2021-11-06,2.6,100500.0,4.5,4.5,20
+EMP-0349,Finance,Financial Analyst,Toronto,2022-11-01,1.6,91400.0,3.3,3.8,15
+EMP-0350,Sales,Business Development Rep,New York,2022-09-26,1.7,102400.0,4.6,4.4,10
+EMP-0351,Finance,Payroll Manager,London,2022-12-15,1.5,95700.0,4.2,3.5,22
+EMP-0352,Finance,Financial Analyst,New York,2023-01-02,1.4,83900.0,3.3,4.4,28
+EMP-0353,Marketing,SEO Specialist,Austin,2020-04-10,4.1,101200.0,3.7,4.0,8
+EMP-0354,Marketing,Content Strategist,San Francisco,2021-10-14,2.6,98200.0,2.8,3.8,24
+EMP-0355,Product,Product Manager,Austin,2018-08-08,5.8,120600.0,4.4,3.7,18
+EMP-0356,Human Resources,HR Generalist,San Francisco,2018-10-11,5.6,83000.0,3.6,3.5,26
+EMP-0357,Marketing,SEO Specialist,San Francisco,2018-08-01,5.8,104200.0,3.6,3.2,5
+EMP-0358,Marketing,Content Strategist,Remote,2022-03-14,2.2,90900.0,3.8,3.5,12
+EMP-0359,Sales,Business Development Rep,London,2022-12-30,1.4,85800.0,3.8,5.0,3
+EMP-0360,Sales,Sales Manager,Remote,2019-08-03,4.8,101900.0,4.4,3.2,14
+EMP-0361,Product,UX Designer,Toronto,2022-03-14,2.2,118300.0,2.6,3.3,14
+EMP-0362,Human Resources,People Operations Manager,Toronto,2022-07-25,1.9,80300.0,3.2,4.8,7
+EMP-0363,Finance,Staff Accountant,San Francisco,2021-08-02,2.8,90100.0,3.1,3.9,27
+EMP-0364,Finance,Payroll Manager,San Francisco,2021-12-27,2.4,104200.0,4.0,4.7,4
+EMP-0365,Engineering,QA Architect,Austin,2020-10-24,3.6,131400.0,3.3,3.1,27
+EMP-0366,Product,UX Designer,Austin,2020-11-30,3.5,121000.0,3.0,3.5,11
+EMP-0367,Human Resources,People Operations Manager,London,2019-03-25,5.2,88100.0,3.6,4.1,20
+EMP-0368,Marketing,Content Strategist,Austin,2021-09-30,2.7,92500.0,2.9,3.4,18
+EMP-0369,Human Resources,Talent Recruiter,Toronto,2022-08-11,1.8,80600.0,4.6,3.9,14
+EMP-0370,Engineering,QA Architect,Austin,2021-03-09,3.2,146900.0,3.5,4.8,17
+EMP-0371,Sales,Sales Manager,Toronto,2020-07-15,3.9,103700.0,3.1,3.4,13
+EMP-0372,Product,Technical Program Manager,Remote,2020-02-06,4.3,137300.0,3.8,4.2,20
+EMP-0373,Finance,Staff Accountant,Toronto,2022-07-02,1.9,86300.0,3.6,3.2,23
+EMP-0374,Finance,Staff Accountant,Toronto,2021-08-28,2.8,107500.0,2.7,3.6,7
+EMP-0375,Marketing,Growth Marketer,Toronto,2019-10-23,4.6,100800.0,2.8,4.5,3
+EMP-0376,Finance,Financial Analyst,Remote,2021-05-26,3.0,106800.0,2.8,3.2,20
+EMP-0377,Human Resources,HR Generalist,Austin,2023-06-09,1.0,88600.0,3.1,4.7,14
+EMP-0378,Sales,Sales Manager,Toronto,2018-08-17,5.8,106600.0,3.6,4.7,19
+EMP-0379,Sales,Business Development Rep,Toronto,2019-01-28,5.3,111800.0,3.0,4.2,14
+EMP-0380,Human Resources,Talent Recruiter,Remote,2018-11-01,5.6,96800.0,4.8,3.9,4
+EMP-0381,Finance,Payroll Manager,London,2019-12-14,4.5,111100.0,3.3,3.4,21
+EMP-0382,Product,Technical Program Manager,Remote,2020-02-02,4.3,131700.0,3.6,3.1,10
+EMP-0383,Product,UX Designer,London,2022-11-29,1.5,102600.0,2.8,3.9,8
+EMP-0384,Engineering,DevOps Specialist,San Francisco,2021-07-21,2.9,120400.0,4.0,3.5,14
+EMP-0385,Sales,Sales Manager,Toronto,2021-09-18,2.7,91600.0,3.1,4.0,25
+EMP-0386,Sales,Account Executive,San Francisco,2021-09-01,2.7,110500.0,3.8,3.8,9
+EMP-0387,Product,Technical Program Manager,Toronto,2021-01-28,3.3,124400.0,4.8,4.8,23
+EMP-0388,Human Resources,Talent Recruiter,Toronto,2021-10-15,2.6,83000.0,4.8,4.5,5
+EMP-0389,Finance,Payroll Manager,New York,2022-08-28,1.8,91500.0,4.6,3.3,18
+EMP-0390,Data Analytics,Data Scientist,London,2022-10-24,1.6,97900.0,3.3,4.7,12
+EMP-0391,Sales,Business Development Rep,San Francisco,2020-12-19,3.4,111700.0,3.1,3.5,5
+EMP-0392,Human Resources,HR Generalist,London,2021-10-14,2.6,88300.0,3.2,4.9,27
+EMP-0393,Sales,Account Executive,Austin,2020-05-18,4.0,103500.0,4.3,3.9,23
+EMP-0394,Sales,Account Executive,Toronto,2019-09-16,4.7,114700.0,3.3,3.0,20
+EMP-0395,Marketing,Growth Marketer,Remote,2019-01-29,5.3,113500.0,3.3,3.7,11
+EMP-0396,Engineering,DevOps Specialist,Austin,2022-04-10,2.1,117600.0,2.7,4.5,18
+EMP-0397,Engineering,QA Architect,Remote,2019-10-16,4.6,138700.0,3.9,4.5,9
+EMP-0398,Human Resources,HR Generalist,San Francisco,2022-02-20,2.3,80600.0,3.6,4.5,13
+EMP-0399,Human Resources,Talent Recruiter,Toronto,2020-11-15,3.5,92800.0,3.6,4.2,25
+EMP-0400,Finance,Payroll Manager,New York,2023-04-10,1.1,87800.0,2.8,5.0,12
+EMP-0401,Human Resources,HR Generalist,Austin,2019-08-17,4.8,97900.0,4.3,4.0,16
+EMP-0402,Sales,Account Executive,Austin,2022-11-03,1.6,92600.0,2.7,4.5,16
+EMP-0403,Marketing,SEO Specialist,Toronto,2022-11-17,1.5,97900.0,3.2,3.9,25
+EMP-0404,Sales,Account Executive,New York,2019-05-18,5.0,110000.0,2.9,3.6,9
+EMP-0405,Finance,Payroll Manager,San Francisco,2019-01-17,5.4,112600.0,3.6,4.0,28
+EMP-0406,Marketing,Growth Marketer,Remote,2020-01-14,4.4,103300.0,4.8,4.7,17
+EMP-0407,Sales,Account Executive,New York,2021-04-11,3.1,103700.0,4.9,4.5,15
+EMP-0408,Product,Technical Program Manager,Toronto,2022-03-29,2.2,107000.0,2.8,4.8,14
+EMP-0409,Engineering,QA Architect,Remote,2021-07-21,2.9,128600.0,2.5,4.4,14
+EMP-0410,Data Analytics,Analytics Engineer,Remote,2018-09-08,5.7,110800.0,3.5,4.6,25
+EMP-0411,Finance,Financial Analyst,Toronto,2021-10-07,2.7,105400.0,3.3,4.4,3
+EMP-0412,Sales,Sales Manager,Austin,2020-06-24,3.9,94400.0,2.5,4.5,26
+EMP-0413,Marketing,Growth Marketer,London,2020-02-02,4.3,99200.0,3.5,4.3,5
+EMP-0414,Human Resources,HR Generalist,Remote,2021-10-26,2.6,92100.0,4.5,4.3,16
+EMP-0415,Engineering,Software Engineer,Toronto,2022-02-19,2.3,120000.0,4.3,3.7,15
+EMP-0416,Finance,Staff Accountant,Austin,2019-04-02,5.2,115000.0,3.1,4.4,13
+EMP-0417,Sales,Sales Manager,Remote,2022-01-24,2.4,111200.0,4.8,3.5,11
+EMP-0418,Marketing,Growth Marketer,Remote,2022-04-05,2.2,97000.0,3.9,3.7,4
+EMP-0419,Finance,Financial Analyst,Toronto,2018-01-06,6.4,118300.0,3.3,3.4,16
+EMP-0420,Product,Product Manager,New York,2018-11-20,5.5,144400.0,2.8,3.4,27
+EMP-0421,Product,UX Designer,Toronto,2020-10-30,3.6,121100.0,3.3,3.8,25
+EMP-0422,Product,Product Manager,Remote,2019-07-30,4.8,133200.0,2.8,4.3,20
+EMP-0423,Human Resources,Talent Recruiter,Remote,2023-02-05,1.3,90600.0,3.7,4.2,4
+EMP-0424,Engineering,Software Engineer,New York,2019-06-16,5.0,158200.0,4.2,4.0,6
+EMP-0425,Finance,Staff Accountant,Toronto,2020-05-22,4.0,109200.0,3.5,3.1,7
+EMP-0426,Engineering,QA Architect,Remote,2018-05-11,6.1,157200.0,2.8,3.5,10
+EMP-0427,Sales,Sales Manager,San Francisco,2018-09-09,5.7,111900.0,4.6,4.8,25
+EMP-0428,Data Analytics,BI Developer,San Francisco,2018-08-23,5.8,131900.0,3.5,3.9,10
+EMP-0429,Data Analytics,Data Scientist,Toronto,2022-05-19,2.0,120300.0,3.5,3.7,24
+EMP-0430,Finance,Staff Accountant,Austin,2019-02-28,5.3,96900.0,3.8,3.6,21
+EMP-0431,Marketing,SEO Specialist,San Francisco,2021-06-08,3.0,84500.0,4.3,4.6,20
+EMP-0432,Data Analytics,Data Analyst,Austin,2018-05-30,6.0,137600.0,4.6,4.2,24
+EMP-0433,Marketing,Growth Marketer,Remote,2023-03-10,1.2,92100.0,2.6,4.4,25
+EMP-0434,Human Resources,People Operations Manager,San Francisco,2019-10-19,4.6,96400.0,4.9,4.0,18
+EMP-0435,Marketing,SEO Specialist,Remote,2019-11-06,4.6,89300.0,4.2,4.4,14
+EMP-0436,Marketing,SEO Specialist,New York,2020-01-30,4.3,108000.0,2.5,4.1,17
+EMP-0437,Finance,Payroll Manager,Austin,2019-06-16,5.0,109700.0,2.5,4.1,27
+EMP-0438,Data Analytics,BI Developer,San Francisco,2018-06-24,5.9,111500.0,4.7,4.9,20
+EMP-0439,Product,Technical Program Manager,San Francisco,2018-06-24,5.9,142900.0,4.1,4.4,6
+EMP-0440,Engineering,Software Engineer,San Francisco,2022-09-28,1.7,122800.0,2.9,3.8,19
+EMP-0441,Finance,Financial Analyst,Austin,2019-03-30,5.2,98400.0,3.0,3.4,2
+EMP-0442,Engineering,Software Engineer,Remote,2019-09-12,4.7,147600.0,4.2,3.6,7
+EMP-0443,Data Analytics,Data Scientist,Toronto,2022-03-31,2.2,109400.0,3.6,4.3,8
+EMP-0444,Human Resources,People Operations Manager,London,2022-08-12,1.8,87000.0,3.6,4.3,9
+EMP-0445,Product,Product Manager,Remote,2018-10-23,5.6,134000.0,3.9,3.7,25
+EMP-0446,Human Resources,People Operations Manager,Remote,2021-10-26,2.6,76700.0,4.9,3.4,12
+EMP-0447,Finance,Financial Analyst,Toronto,2023-04-11,1.1,88400.0,4.2,3.2,10
+EMP-0448,Data Analytics,Data Scientist,Toronto,2018-11-06,5.6,111900.0,3.4,3.3,5
+EMP-0449,Data Analytics,Analytics Engineer,San Francisco,2018-02-10,6.3,137100.0,2.9,4.2,7
+EMP-0450,Human Resources,Talent Recruiter,New York,2022-07-03,1.9,92800.0,2.7,3.1,22
+EMP-0451,Product,Product Manager,San Francisco,2018-04-19,6.1,127100.0,3.8,3.7,9
+EMP-0452,Human Resources,Talent Recruiter,Toronto,2021-12-10,2.5,89800.0,4.4,4.5,5
+EMP-0453,Human Resources,Talent Recruiter,Austin,2019-01-17,5.4,102500.0,4.1,4.6,3
+EMP-0454,Product,Product Manager,New York,2021-07-30,2.8,107900.0,2.9,3.1,9
+EMP-0455,Human Resources,People Operations Manager,Austin,2020-07-04,3.9,95200.0,4.5,4.3,9
+EMP-0456,Marketing,Growth Marketer,Remote,2019-11-07,4.6,87400.0,3.6,4.1,24
+EMP-0457,Marketing,SEO Specialist,San Francisco,2023-03-22,1.2,84900.0,3.8,4.4,4
+EMP-0458,Finance,Payroll Manager,Toronto,2020-07-04,3.9,94800.0,4.6,3.4,24
+EMP-0459,Sales,Sales Manager,Austin,2020-02-24,4.3,104500.0,4.4,4.4,12
+EMP-0460,Engineering,QA Architect,London,2018-11-12,5.6,141500.0,3.3,4.3,21
+EMP-0461,Data Analytics,Data Scientist,Austin,2022-08-07,1.8,99500.0,3.5,4.1,24
+EMP-0462,Human Resources,Talent Recruiter,Remote,2021-11-12,2.6,83600.0,4.0,4.2,28
+EMP-0463,Sales,Sales Manager,London,2020-10-01,3.7,100900.0,2.7,4.2,24
+EMP-0464,Marketing,Growth Marketer,Toronto,2020-12-31,3.4,87100.0,2.6,4.2,10
+EMP-0465,Engineering,QA Architect,New York,2022-10-16,1.6,135800.0,4.7,4.2,28
+EMP-0466,Marketing,Growth Marketer,Toronto,2022-08-17,1.8,90200.0,2.8,3.6,21
+EMP-0467,Engineering,QA Architect,Toronto,2019-11-10,4.6,135900.0,3.9,3.8,18
+EMP-0468,Marketing,SEO Specialist,Toronto,2022-04-13,2.1,80100.0,2.7,4.2,16
+EMP-0469,Product,Technical Program Manager,Toronto,2023-04-02,1.2,105300.0,4.8,3.9,14
+EMP-0470,Marketing,Content Strategist,San Francisco,2021-05-11,3.1,98900.0,4.9,4.6,3
+EMP-0471,Engineering,QA Architect,New York,2022-09-04,1.7,120300.0,4.6,4.7,8
+EMP-0472,Data Analytics,BI Developer,Austin,2019-02-11,5.3,115000.0,4.3,3.6,5
+EMP-0473,Product,Technical Program Manager,New York,2022-08-23,1.8,118800.0,2.8,3.1,27
+EMP-0474,Human Resources,People Operations Manager,San Francisco,2019-11-09,4.6,85700.0,2.9,4.5,2
+EMP-0475,Human Resources,People Operations Manager,San Francisco,2021-05-13,3.1,85200.0,2.7,4.3,20
+EMP-0476,Human Resources,HR Generalist,London,2021-02-18,3.3,95100.0,3.3,4.0,27
+EMP-0477,Marketing,Content Strategist,Austin,2018-11-15,5.5,112900.0,3.4,3.7,5
+EMP-0478,Product,Technical Program Manager,Toronto,2021-06-06,3.0,108400.0,4.0,4.4,6
+EMP-0479,Data Analytics,Analytics Engineer,New York,2019-05-23,5.0,128200.0,4.6,4.5,9
+EMP-0480,Data Analytics,Data Scientist,Remote,2023-01-18,1.4,108800.0,4.9,4.9,16
+EMP-0481,Product,Product Manager,Remote,2021-03-29,3.2,132200.0,4.8,3.9,18
+EMP-0482,Human Resources,Talent Recruiter,San Francisco,2021-08-13,2.8,89100.0,3.5,3.1,8
+EMP-0483,Marketing,Growth Marketer,San Francisco,2020-08-08,3.8,96400.0,4.1,4.4,24
+EMP-0484,Engineering,Senior Developer,San Francisco,2018-11-02,5.6,141600.0,3.6,4.0,22
+EMP-0485,Human Resources,Talent Recruiter,Austin,2022-12-29,1.4,75500.0,2.6,3.8,7
+EMP-0486,Engineering,QA Architect,London,2019-04-17,5.1,140300.0,2.9,4.1,25
+EMP-0487,Finance,Financial Analyst,Remote,2021-01-11,3.4,104700.0,2.9,3.5,3
+EMP-0488,Engineering,QA Architect,Toronto,2019-04-02,5.2,152600.0,3.0,3.8,11
+EMP-0489,Engineering,QA Architect,Toronto,2022-06-14,2.0,121200.0,2.7,4.6,11
+EMP-0490,Marketing,Content Strategist,New York,2021-06-21,2.9,103700.0,3.3,4.0,5
+EMP-0491,Data Analytics,Data Scientist,Austin,2018-06-05,6.0,121300.0,4.6,4.8,8
+EMP-0492,Product,UX Designer,Austin,2018-04-19,6.1,122600.0,4.5,4.4,15
+EMP-0493,Finance,Financial Analyst,New York,2020-07-18,3.9,94600.0,4.8,3.8,26
+EMP-0494,Sales,Business Development Rep,Toronto,2022-12-09,1.5,90200.0,2.8,4.1,15
+EMP-0495,Data Analytics,Data Analyst,Remote,2019-08-16,4.8,122600.0,4.9,4.4,27
+EMP-0496,Marketing,Content Strategist,London,2018-09-01,5.7,95700.0,2.7,3.6,21
+EMP-0497,Marketing,Content Strategist,Remote,2021-06-24,2.9,96700.0,3.0,3.8,7
+EMP-0498,Marketing,Growth Marketer,Toronto,2020-07-05,3.9,98400.0,4.5,3.5,15
+EMP-0499,Data Analytics,Analytics Engineer,Remote,2021-03-08,3.2,121000.0,2.7,4.2,20
+EMP-0500,Marketing,Growth Marketer,London,2019-03-11,5.2,108800.0,3.9,4.6,17
